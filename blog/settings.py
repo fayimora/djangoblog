@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'blog.authentication',
 ]
 
 MIDDLEWARE = [
@@ -84,6 +86,9 @@ DATABASES = {
     }
 }
 
+
+# Use Custom User Model
+AUTH_USER_MODEL = 'authentication.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
