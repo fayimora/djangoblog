@@ -7,9 +7,21 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello Blog!</h1>
-    <hr />
-    {% block main %}
-    {% endblock main %}
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header"><a class="navbar-brand" href="/">Blog</a></div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="jumbotron">
+        {% block main %}
+        {% endblock main %}
+      </div>
+    </div>
+
   </body>
 </html>
