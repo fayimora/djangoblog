@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'blog.core',
     'blog.authentication',
+    'blog.posts',
 ]
 
 MIDDLEWARE = [

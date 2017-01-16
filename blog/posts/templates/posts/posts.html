@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block main %}
+<h1>Hello from /posts</h1>
+<p>Welcome</p>
+<ul>
+  {% for post in posts %}
+  <li>{{post.title}}</li>
+  {% endfor %}
+</ul>
+{% endblock  %}
